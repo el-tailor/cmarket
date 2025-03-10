@@ -1,0 +1,31 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+    {{ parent() }} | Achète, Vends ou échange tes vêtements et autres accéssoires
+{% endblock %}
+
+{% block stylesheets %}
+	{{ encore_entry_link_tags('signin') }}
+{% endblock %}
+
+{% block javascripts %}
+	{{ encore_entry_script_tags('signin') }}
+{% endblock %}
+
+{% block body %}
+<main>
+   <form>
+    <h1>Bienvenue</h1>
+        <text-input  placeholder="Adresse E-mail ou nom d'utilisateur" type="email" name="email"></text-input>
+        <text-input  placeholder="Mot de passe" type="password" name="password"></text-input>
+        <div style="display: flex; align-items: center; gap: 10px; margin-top: 10px">
+            <input type="checkbox" id="remember-me" name="remember" />
+            <label for="remember-me" style="font-size: 0.8rem">Se souvenir de moi</label>
+        </div>
+
+        <button type="submit">Continuer</button>
+        <a>Mot de passe oublié ?</a>
+
+   </form>
+</main>
+{% endblock %}

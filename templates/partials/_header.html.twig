@@ -1,0 +1,25 @@
+<header>
+	<div class="wrapper">
+		<div class="wrapper-top">
+			<a href="{{ path('app_main') }}" class="logo-link">CMarket</a>
+			<form>
+				<div class="form-container">
+					<select>
+						<option checked>Articles</option>
+						<option>Membres</option>
+					</select>
+                    <span class="material-symbols-outlined">search</span>
+					<input type="text" placeholder="Rechercher des articles"/>
+				</div>
+			</form>
+			<div class="more-panel">
+                <div class="sign-panel">
+                    <a class="sign-link" href="{{ path('app_signup') }}">S'inscrire | Se connecter</a>
+                    <a class="sell-link"  href="{{ path('app_signin') }}">Vends tes articles</a>
+                </div>
+                <button><span class="material-symbols-outlined">menu</span></button>
+            </div>
+		</div>
+		<div class="wrapper-bottom"></div>
+	</div>
+</header>

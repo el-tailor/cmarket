@@ -1,0 +1,43 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+	{{ parent() }}
+	| Achète, Vends ou échange tes vêtements et autres accéssoires
+{% endblock %}
+
+{% block stylesheets %}
+	{{ encore_entry_link_tags('signup') }}
+{% endblock %}
+
+{% block javascripts %}
+	{{ encore_entry_script_tags('signup') }}
+{% endblock %}
+
+{% block body %}
+	<main>
+		<form>
+			<h1>Rejoins le mouvement de la seconde main et vends sans frais</h1>
+			<text-input placeholder="Nom d'utilisateur" type="text" name="username" helper-text="Crée ton nom d'utilisateur en utilisant des lettres et des chiffres. Choisis en un qui te plait, tu ne pourras plus le changer"></text-input>
+			<text-input placeholder="Email" type="email" name="email" helper-text="Saisis l'adresse e-mail que tu souhaites utiliser sur CMarket"></text-input>
+			<text-input placeholder="Mot de passe" type="password" name="password" helper-text="Saisis au moins 7 caractères, dont au moins 1 lettre et un chiffre"></text-input>
+			<div style="display: flex; align-items: center; gap: 10px; margin-top: 10px">
+				<input type="checkbox" id="remember-me" name="remember"/>
+				<label for="remember-me" style="font-size: 0.8rem">Se souvenir de moi</label>
+			</div>
+
+			<button type="submit">Continuer</button>
+
+			<div class="divider-block">
+				<span class="divider"></span>
+				<span>OU</span>
+				<span class="divider"></span>
+			</div>
+
+			<a class="with-google">
+				<img src="{{ asset('img/google.svg') }}"  />
+				<span>S'inscrire avec Google</span>
+			</a>
+
+		</form>
+	</main>
+{% endblock %}

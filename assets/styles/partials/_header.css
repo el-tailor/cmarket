@@ -1,0 +1,167 @@
+
+header {
+    width: auto;
+    margin: auto;
+    background-color: white;
+    border-bottom: 1px solid var(--body-background-color);
+}
+
+header .wrapper {
+    height: auto;
+}
+
+header .wrapper .wrapper-top {
+    min-height: 50px;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 50px;
+}
+
+header .wrapper-top .logo-link {
+    font-family: var(--ubuntu-medium);
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: 20px;
+}
+
+header form div.form-container {
+    display: grid;
+    height: 35px;
+    box-sizing: border-box;
+    grid-template-columns: auto auto 1fr;
+    align-items: center;
+    background-color: var(--body-background-color);
+    padding: 5px;
+    gap: 5px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+header form select {
+    font-size: 0.9rem;
+}
+
+header form select, header form input {
+    outline: none;
+    border: none;
+    color: gray;
+    background-color: transparent;
+}
+
+header form input {
+    font-size: 1rem;
+}
+
+header form span.material-symbols-outlined {
+    border-left: 1px solid gray;
+    padding-left: 10px;
+    margin-left: 10px;
+    margin-right: 5px;
+    font-size: 20px;
+    color: gray;
+}
+
+header .more-panel {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+header .more-panel .sign-panel {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+header .sign-panel a {
+    font-size: 0.8rem;
+    border-radius: 7px;
+    padding: 5px 15px;
+    text-decoration: none;
+}
+
+header .sign-panel .sign-link {
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    &:hover {
+        background-color: rgba(var(--grey-text-color-name), 0.1);
+    }
+}
+
+header .sign-panel .sell-link {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+header .more-panel button {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    display: none;
+    &:hover {
+        background-color: rgba(var(--grey-text-color-name), 0.1);
+    }
+}
+
+header .more-panel button span {
+    color: gray;
+}
+
+@media all and (max-width: 800px) {
+    header .more-panel button {
+        display: flex;
+    }
+ 
+    header .wrapper .wrapper-top {
+        height: auto;
+        grid-template-rows: auto auto;
+        gap: 5px;
+    }
+
+    header .more-panel {
+        grid-column: 3;
+    }
+
+    header .more-panel .sign-panel {
+        display: none;
+        position: fixed;
+        height: 100%;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        overflow-y: scroll;
+        background-color: white;
+        z-index: 100;
+        padding-top: 15px;
+        padding-left: 25px;
+        padding-right: 25px;
+        box-sizing: border-box;
+    }
+
+    header .more-panel .sign-panel a {
+        width: auto;
+        height: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+        margin-top: 10px;
+    }
+
+    header .sign-panel.show {
+        display: block;
+    }
+
+    header form {
+        border-top: 1px solid #eee;
+        grid-column: 1/4;
+        grid-row: 2;
+        padding-top: 10px;
+    }
+
+}

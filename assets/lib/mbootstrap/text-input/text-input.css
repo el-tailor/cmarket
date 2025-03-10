@@ -1,0 +1,48 @@
+text-input {
+    display: block;
+    width: auto;
+    height: auto;
+}
+
+text-input div.container div {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    border-bottom: 1px solid #eee;
+
+}
+
+text-input.focus div.container div {
+    border-bottom: 1px solid var(--primary-color);
+}
+
+text-input div span {
+    font-size: 0.7rem;
+    color: gray;
+}
+
+text-input div span.error-text {
+    display: none;
+    color: red;
+    font-size: 0.7rem;
+}
+
+text-input.error div span.error-text {
+    display: block;
+}
+
+text-input.error div span.helper-text {
+    display: none;
+}
+
+text-input div label {
+    font-size: 0.8rem;
+}
+
+text-input div .input-field {
+    display: block;
+    outline: none;
+    width: 100%;
+    font-size: 0.9rem;
+    background-color: transparent;
+    border: none;
+}

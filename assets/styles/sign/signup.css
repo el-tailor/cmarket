@@ -1,0 +1,30 @@
+@import url("./sign.css");
+
+form .with-google {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 7px;
+    gap: 10px;
+}
+
+form .divider-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+form .divider-block .divider {
+    height: 1px;
+    background-color: gray;
+    width: 25px;
+}
+
+form .with-google img {
+    height: 24px;
+}

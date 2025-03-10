@@ -1,0 +1,6 @@
+:root {
+    --primary-color-name : 0, 119, 130;
+    --grey-text-color-name: 90, 101, 102;
+    --primary-color: rgb(var(--primary-color-name));
+    --body-background-color: rgb(237, 242, 242);
+}

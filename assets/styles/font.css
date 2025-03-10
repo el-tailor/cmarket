@@ -1,0 +1,38 @@
+@font-face {
+    font-family: "Roboto_Regular";
+    src: url("../fonts/roboto/Roboto-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Roboto_Light";
+    src: url("../fonts/roboto/Roboto-Light.ttf");
+}
+
+@font-face {
+    font-family: "Roboto_Medium";
+    src: url("../fonts/roboto/Roboto-Medium.ttf");
+}
+
+@font-face {
+    font-family: "Ubuntu_Regular";
+    src: url("../fonts/ubuntu/ur.ttf");
+}
+
+@font-face {
+    font-family: "Ubuntu_Medium";
+    src: url("../fonts/ubuntu/um.ttf");
+}
+
+@font-face {
+    font-family: "Ubuntu_Bold";
+    src: url("../fonts/ubuntu/ub.ttf");
+}
+
+:root {
+    --roboto : "Roboto_Regular";
+    --roboto-light: "Roboto_Light";
+    --roboto-medium: "Roboto_Medium";
+    --ubuntu: "Ubuntu_Regular";
+    --ubuntu-medium: "Ubuntu_Medium";
+    --ubuntu-bold: "Ubuntu_Bold";
+}

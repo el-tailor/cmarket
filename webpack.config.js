@@ -21,6 +21,9 @@ Encore
      * and one CSS file (e.g. app.css) if your JavaScript imports CSS.
      */
     .addEntry('app', './assets/app.js')
+    .addEntry('main', './assets/scripts/main/index.js')
+    .addEntry('signin', './assets/scripts/sign/signin.js')
+    .addEntry('signup', './assets/scripts/sign/signup.js')
 
     // When enabled, Webpack "splits" your files into smaller pieces for greater optimization.
     .splitEntryChunks()
@@ -40,7 +43,8 @@ Encore
     .enableBuildNotifications()
     .enableSourceMaps(!Encore.isProduction())
     // enables hashed filenames (e.g. app.abc123.css)
-    .enableVersioning(Encore.isProduction())
+    //.enableVersioning(Encore.isProduction())
+    .enableVersioning(true)
 
     // configure Babel
     // .configureBabel((config) => {

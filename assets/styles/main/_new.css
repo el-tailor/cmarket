@@ -1,0 +1,39 @@
+#news {
+    height: 300px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+#news .wrapper {
+    height: 100%;
+    border-radius: 15px;
+    display: flex;
+    background-size: cover;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+#news h1, #news h2 {
+    font-family: var(--roboto);
+    color: white;
+    font-weight: 100;
+}
+
+#news h2 {
+    font-size: 1.7rem;
+    margin-top: 15px;
+}
+
+#news a {
+    width: max-content;
+    padding: 7px 15px;
+    border-radius: 5px;
+    background-color: white;
+}
+
+#news .wrapper div {
+    width: 400px;
+    height: auto;
+}
