@@ -58,6 +58,10 @@ export class TextInput extends HTMLElement {
         })
     }
 
+    getText() {
+        return this.querySelector('.input-field').value;
+    }
+
 }
 
 customElements.define("text-input", TextInput)
